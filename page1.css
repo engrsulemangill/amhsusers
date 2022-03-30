@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+*
+.main
+{
+    padding:5px;
+}
+.main h2
+{
+    text-align: center;
+}
+.main .nav
+{
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+.main .nav img
+{
+    width:100px;
+    height:100px;
+}
+
+
+.main .nav h2
+{
+    text-align: center;
+}
+.main .myTable
+{
+    width:100%;
+    padding:20px 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+.main .myTable input::placeholder
+{
+    padding:10px;
+}
+.main .myTable input
+{
+    width:150px;
+    height: 5vh;
+    border:2px solid black;
+    box-shadow: 0 0 5px black;
+} 
+.main .myTable td:target 
+{
+    background-color: rgba(0, 0, 255, 0.787);
+    cursor: pointer;
+    color:white;
+
+}
+.main .myTable tr:hover
+{
+background-color: rgba(0, 0, 255, 0.212);}
+ 
+
+

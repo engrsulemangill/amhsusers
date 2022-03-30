@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="1.png">
+    <link rel="stylesheet" href="page2.css">
+    <title>Router Details & Configuration</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="1.png" alt="">
+            <h2>AMHS EQUIPMENT DETAILS</h2>
+        </div>
+        <div class="about" id="192.168.14.20">
+            <div class="spec">
+                <div class="img">
+                    <h2>MTA SERVER</h2>
+                    <img src="" alt="">
+                </div>
+                <div class="details">
+                    <h2>MTA SERVER DETAILS</h2>
+                    <p>There are Qty 02 MTA Server deployed in Main Standby Configuration at the Equipment Room. Primary MTA Server has IP Address 192.168.14.21 while the Secondary has 192.168.14.22. A Virtual IP (192.168.14.20) is assigned to both the Servers which represents the Server in Operation </p>
+                </div>
+            </div>
+            <div class="configuration">
+                <div class="heading"><h2>MTA SERVER IP CONFIGURATION</h2></div>
+                <div class="para"><p></p></div>
+            </div>
+        </div>
+        <div class="about" id="192.168.14.1">
+            <div class="spec">
+                <div class="img">
+                    <h2>IDS CORE SWITCH 1</h2>
+                    <img src="" alt="">
+                </div>
+                <div class="details">
+                    <h2>IDS SWITCH 1 DETAILS</h2>
+                    <p>Make HP Model Aruba is a 42 Port Layer 3 Switch. It is responsible for the Network Communication between Servers and Workstations. As the name suggests all the core IP routes are configured on this switch.</p>
+                </div>
+            </div>
+            <div class="configuration">
+                <div class="heading"><h2>IDS CORE SWITCH 1 CONFIGURATION</h2></div>
+                <div class="para"><p>hostname "idscoresw1"<br>
+                    module 1 type jl072x<br>
+                    module 2 type jl072y<br>
+                    trunk 1 trk1 dt-lacp<br>
+                    trunk 2 trk2 dt-lacp<br>
+                    trunk 3 trk3 dt-lacp<br>
+                    trunk 4 trk4 dt-lacp<br>
+                    trunk 5 trk5 dt-lacp<br>
+                    trunk 6 trk6 dt-lacp<br>
+                    trunk 7 trk7 dt-lacp<br>
+                    trunk 8 trk8 dt-lacp<br>
+                    trunk 9 trk9 dt-lacp<br>
+                    trunk 10 trk10 dt-lacp<br>
+                    trunk 11 trk11 dt-lacp<br>
+                    trunk 12 trk12 dt-lacp<br>
+                    trunk 47-48 trk100 trunk<br>
+                    no telnet-server<br>
+                    web-management management-url "192.168.14.1"<br>
+                    ip ssh filetransfer<br>
+                    ip route 1.1.1.0 255.255.255.0 192.168.14.5<br>
+                    ip route 1.1.1.5 255.255.255.255 192.168.14.199<br>
+                    ip route 2.2.2.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.10.0.0 255.255.0.0 192.168.171.2<br>
+                    ip route 10.10.100.0 255.255.255.0 192.168.14.199<br>
+                    ip route 10.10.100.100 255.255.255.255 192.168.171.2<br>
+                    ip route 10.10.101.0 255.255.255.0 192.168.14.199<br>
+                    ip route 10.10.104.0 255.255.255.0 192.168.14.5<br>
+                    ip route 10.10.106.0 255.255.255.0 192.168.14.20<br>
+                    ip route 10.12.0.0 255.255.0.0 192.168.171.2<br>
+                    ip route 10.12.4.123 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.0.1 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.0.2 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.1.10 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.1.118 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.2.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.17.5.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.17.5.69 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.6.115 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.6.116 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.6.127 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.6.129 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.17.250 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.60.50 255.255.255.255 192.168.171.2<br>
+                    ip route 10.18.0.250 255.255.255.255 192.168.171.2<br>
+                    ip route 10.18.11.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.36.0.0 255.255.0.0 192.168.171.2<br>
+                    ip route 10.36.9.199 255.255.255.255 192.168.171.2<br>
+                    ip route 10.48.164.0 255.255.255.0 192.168.14.5<br>
+                    ip route 10.68.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.69.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.70.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.71.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.72.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.73.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.74.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.76.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.77.0.99 255.255.255.255 192.168.171.2<br>
+                    ip route 10.82.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.93.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.94.0.0 255.255.0.0 192.168.171.2<br>
+                    ip route 10.95.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.97.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.99.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.101.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.105.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 172.16.10.0 255.255.255.0 192.168.14.5<br>
+                    ip route 172.18.25.0 255.255.255.0 192.168.171.2<br>
+                    ip route 172.21.66.0 255.255.255.0 192.168.171.2<br>
+                    ip route 172.30.25.50 255.255.255.255 192.168.171.2<br>
+                    ip route 192.168.10.0 255.255.255.0 192.168.171.2<br>
+                    ip route 192.168.13.0 255.255.255.0 192.168.171.2<br>
+                    ip route 192.168.15.0 255.255.255.0 192.168.15.99<br>
+                    ip route 192.168.32.0 255.255.252.0 192.168.171.2<br>
+                    ip route 192.168.36.0 255.255.254.0 192.168.171.2<br>
+                    ip route 192.168.38.0 255.255.255.0 192.168.171.2<br>
+                    ip route 192.168.39.0 255.255.255.0 192.168.14.5<br>
+                    ip route 192.168.40.0 255.255.254.0 192.168.171.2<br>
+                    ip route 192.168.42.0 255.255.254.0 192.168.171.2<br>
+                    ip route 192.168.44.0 255.255.252.0 192.168.171.2<br>
+                    ip route 192.168.48.0 255.255.248.0 192.168.171.2<br>
+                    ip route 192.168.55.0 255.255.255.0 192.168.171.2<br>
+                    ip route 192.168.56.0 255.255.255.0 192.168.171.2<br>
+                    ip route 192.168.60.0 255.255.255.0 192.168.14.5<br>
+                    ip route 192.168.170.0 255.255.255.0 192.168.171.2<br>
+                    ip routing<br>
+                    switch-interconnect trk100<br>
+                    interface 1<br>
+                       name "SW1.01 - ubiua1.eth0"<br>
+                       exit<br>
+                    interface 2<br>
+                       name "SW1.02 - ubiua2.eth0"<br>
+                       exit<br>
+                    interface 3<br>
+                       name "SW1.03 - ubimta1.eth0"<br>
+                       exit<br>
+                    interface 4<br>
+                       name "SW1.04 - ubimta2.eth0"<br>
+                       exit<br>
+                    interface 5<br>
+                       name "SW1.05 - aimweb1.eth0"<br>
+                       exit<br>
+                    interface 6<br>
+                       name "SW1.06 - aimweb2.eth0"<br>
+                       exit<br>
+                    interface 7<br>
+                       name "SW1.07 - aimdb1.eth0"<br>
+                       exit<br>
+                    interface 8<br>
+                       name "SW1.08 - aimdb2.eth0"<br>
+                       exit<br>
+                    interface 9<br>
+                       name "SW1.09 - aimweb1.eth2"<br>
+                       exit<br>
+                    interface 10<br>
+                       name "SW1.10  - aimweb2.eth2"<br>
+                       exit<br>
+                    interface 11<br>
+                       name "SW1.11 - aimdb1.eth2"<br>
+                       exit<br>
+                    interface 12<br>
+                       name "SW1.12 - aimdb2.eth2"<br>
+                       exit<br>
+                    interface 13<br>
+                       name "SW1.13 - CADMOS1.eth0"<br>
+                       exit<br>
+                    interface 14<br>
+                       name "SW1.14 - CADMOS2.eth0"<br>
+                       exit<br>
+                    interface 15<br>
+                       name "SW1.15 - CADMOS3.eth0"<br>
+                       exit<br>
+                    interface 16<br>
+                       name "SW1.16 - CADMOS4.eth0"<br>
+                       exit<br>
+                    interface 17<br>
+                       name "SW1.17 - CADMOS5.eth0"<br>
+                       exit<br>
+                    interface 18<br>
+                       name "SW1.18 - CADMOS6.eth0"<br>
+                       exit<br>
+                    interface 19<br>
+                       name "SW1.19 - NTP 1 port 1"<br>
+                       exit<br>
+                    interface 20<br>
+                       name "SW1.20 - NTP 2 port 1"<br>
+                       exit<br>
+                    interface 21<br>
+                       name "SW1.21 - CISCO SW1 0/0"<br>
+                       exit<br>
+                    interface 22<br>
+                       name "SW1.22 - CISCO SW2 0/0"<br>
+                       exit<br>
+                    interface 23<br>
+                       name "SW1.23 - FDPS/ATM Karachi"<br>
+                       exit<br>
+                    interface 24<br>
+                       name "SW1.24 - FDPS/ATM Islamabad"<br>
+                       exit<br>
+                    interface 25<br>
+                       name "SW1.25 - FDPS/ATM Lahore"<br>
+                       exit<br>
+                    interface 26<br>
+                       name "SW1.26 - FDPS/ATM Spare"<br>
+                       exit<br>
+                    interface 27<br>
+                       name "SW1.27 - Suparco"<br>
+                       exit<br>
+                    interface 28<br>
+                       name "SW1.28 - HP LASER M553N"<br>
+                       exit<br>
+                    interface 29<br>
+                       name "---unused---"<br>
+                       exit<br>
+                    interface 30<br>
+                       name "---unused---"<br>
+                       exit<br>
+                    interface 31<br>
+                       name "---unused---"<br>
+                       exit<br>
+                    interface 32<br>
+                       name "---unused---"<br>
+                       exit<br>
+                    interface 33<br>
+                       name "---unused---"<br>
+                       exit<br>
+                    interface 34<br>
+                       name "SW1.34 - PCAA IT LAN"<br>
+                       exit<br>
+                    interface 35<br>
+                       name "SW1.35 - REMOTE WS1"<br>
+                       exit<br>
+                    interface 36<br>
+                       name "SW1.36 - REMOTE WS2"<br>
+                       exit<br>
+                    interface 37<br>
+                       name "SW1.37 - REMOTE WS3"<br>
+                       exit<br>
+                    interface 38<br>
+                       name "SW1.38 - REMOTE WS4"<br>
+                       exit<br>
+                    interface 39<br>
+                       name "SW1.39 - REMOTE WS5"<br>
+                       exit<br>
+                    interface 40<br>
+                       name "SW1.40 - REMOTE WS6"<br>
+                       exit<br>
+                    interface 41<br>
+                       name "SW1.41 - REMOTE WS7"<br>
+                       exit<br>
+                    interface 42<br>
+                       name "SW1.42 - REMOTE WS8"<br>
+                       exit<br>
+                    interface 43<br>
+                       name "SW1.43 - REMOTE WS9"<br>
+                       exit<br>
+                    interface 44<br>
+                       name "SW1.44 - REMOTE WS10"<br>
+                       exit<br>
+                    interface 45<br>
+                       name "technician port"<br>
+                       exit<br>
+                    interface 46<br>
+                       name "SW1.46/SW2.46 - Peer Keepalive"<br>
+                       exit<br>
+                    interface 47<br>
+                       name "SW1.47/SW2.47 - Interswitch Trunk"<br>
+                       exit<br>
+                    interface 48<br>
+                       name "SW1.48/SW2.48 - Interswitch Trunk"<br>
+                       exit<br>
+                    interface Trk1<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk2<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk3<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk4<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk5<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk6<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk7<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk8<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk9<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk10<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk11<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk12<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    snmp-server community "public_ids" operator unrestricted<br>
+                    oobm<br>
+                       no ip address<br>
+                       exit<br>
+                    router vrrp<br>
+                       virtual-ip-ping<br>
+                       exit<br>
+                    vlan 1<br>
+                       name "DEFAULT_VLAN"<br>
+                       no untagged 13-28,30,32-46,Trk1-Trk12<br>
+                       untagged 29,31,Trk100<br>
+                       no ip address<br>
+                       exit<br>
+                    vlan 100<br>
+                       name "VLAN100"<br>
+                       tagged Trk100<br>
+                       no ip address<br>
+                       exit<br>
+                    vlan 1000<br>
+                       name "IDS_MGNT"<br>
+                       untagged 30<br>
+                       tagged Trk100<br>
+                       ip address 192.168.1.1 255.255.255.0<br>
+                       exit<br>
+                       name "AMHS_PUBLIC"<br>
+                       untagged 13-22,28,32-33,45-46,Trk1-Trk4<br>
+                       tagged Trk100<br>
+                       ip address 192.168.14.1 255.255.255.0<br>
+                       vrrp vrid 101<br>
+                          virtual-ip-address 192.168.14.1<br>
+                          priority 255<br>
+                          enable<br>
+                          exit<br>
+                       exit<br>
+                    vlan 1005<br>
+                       name "AIM_PUBLIC"<br>
+                       untagged Trk5-Trk8<br>
+                       tagged Trk100<br>
+                       ip address 192.168.15.1 255.255.255.0<br>
+                       vrrp vrid 105<br>
+                          virtual-ip-address 192.168.15.1<br>
+                          priority 255<br>
+                          enable<br>
+                          exit<br>
+                       exit<br>
+                    vlan 1006<br>
+                       name "AIM_CLUSTER"<br>
+                       untagged Trk9-Trk12<br>
+                       tagged Trk100<br>
+                       ip address 192.168.16.1 255.255.255.0<br>
+                       vrrp vrid 106<br>
+                          virtual-ip-address 192.168.16.1<br>
+                          priority 255<br>
+                          enable<br>
+                          exit<br>
+                       exit<br>
+                    vlan 1021<br>
+                       name "EXTERNAL_FDPS"<br>
+                       untagged 23-27<br>
+                       tagged Trk100<br>
+                       ip address 192.168.12.83 255.255.255.0<br>
+                       exit<br>
+                    vlan 1024<br>
+                       name "VLAN1024"<br>
+                       tagged Trk100<br>
+                       no ip address<br>
+                       exit<br>
+                    vlan 1031<br>
+                       name "WS_LOCAL"<br>
+                       untagged 35-44<br>
+                       tagged Trk100<br>
+                       ip address 192.168.13.1 255.255.255.0<br>
+                       exit<br>
+                    vlan 1041<br>
+                       name "PCAA_IT_LAN"<br>
+                       untagged 34<br>
+                       tagged Trk100<br>
+                       ip address 192.168.171.11 255.255.255.0<br>
+                       vrrp vrid 141<br>
+                          virtual-ip-address 192.168.171.11<br>
+                          priority 255<br>
+                          enable<br>
+                          exit<br>
+                       exit<br>
+                    vlan 1049<br>
+                       name "IDS_iLO"<br>
+                       tagged Trk100<br>
+                       ip address 192.168.2.1 255.255.255.0<br>
+                       vrrp vrid 149<br>
+                          virtual-ip-address 192.168.2.1<br>
+                          priority 255<br>
+                          enable<br>
+                          exit<br>
+                       exit<br>
+                    vlan 1050<br>
+                       name "PEER_KEEPALIVE"<br>
+                       ip address 192.168.3.1 255.255.255.0<br>
+                       exit<br>
+                    spanning-tree Trk1 priority 4 bpdu-filter<br>
+                    spanning-tree Trk2 priority 4 bpdu-filter<br>
+                    spanning-tree Trk3 priority 4 bpdu-filter<br>
+                    spanning-tree Trk4 priority 4 bpdu-filter<br>
+                    spanning-tree Trk5 priority 4 bpdu-filter<br>
+                    spanning-tree Trk6 priority 4 bpdu-filter<br>
+                    spanning-tree Trk7 priority 4 bpdu-filter<br>
+                    spanning-tree Trk8 priority 4 bpdu-filter<br>
+                    spanning-tree Trk9 priority 4 bpdu-filter<br>
+                    spanning-tree Trk10 priority 4 bpdu-filter<br>
+                    spanning-tree Trk11 priority 4 bpdu-filter<br>
+                    spanning-tree Trk12 priority 4 bpdu-filter<br>
+                    spanning-tree Trk100 priority 4<br>
+                    no tftp client<br>
+                    no tftp server<br>
+                    distributed-trunking peer-keepalive vlan 1050<br>
+                    distributed-trunking peer-keepalive destination 192.168.3.2<br>
+                    no autorun<br>
+                    no dhcp config-file-update<br>
+                    no dhcp image-file-update<br>
+                    password manager<br>
+                    password operator<br>
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="192.168.14.2">
+            <div class="spec">
+                <div class="img">
+                    <h2>IDS CORE SWITCH 2</h2>
+                    <img src="" alt="">
+                </div>
+                <div class="details">
+                    <h2>IDS SWITCH 2 DETAILS</h2>
+                    <p>Make HP Model Aruba is a 42 Port Layer 3 Switch. It is responsible for the Network Communication between Servers and Workstations. As the name suggests all the core IP routes are configured on this switch.</p>
+                </div>
+            </div>
+            <div class="configuration">
+                <div class="heading"><h2>IDS CORE SWITCH 2 CONFIGURATION</h2></div>
+                <div class="para"><p>
+                    hostname "idscoresw2"<br>
+                    module 1 type jl072x<br>
+                    module 2 type jl072y<br>
+                    trunk 1 trk1 dt-lacp<br>
+                    trunk 2 trk2 dt-lacp<br>
+                    trunk 3 trk3 dt-lacp<br>
+                    trunk 4 trk4 dt-lacp<br>
+                    trunk 5 trk5 dt-lacp<br>
+                    trunk 6 trk6 dt-lacp<br>
+                    trunk 7 trk7 dt-lacp<br>
+                    trunk 8 trk8 dt-lacp<br>
+                    trunk 9 trk9 dt-lacp<br>
+                    trunk 10 trk10 dt-lacp<br>
+                    trunk 11 trk11 dt-lacp<br>
+                    trunk 12 trk12 dt-lacp<br>
+                    trunk 47-48 trk100 trunk<br>
+                    no telnet-server<br>
+                    web-management management-url "192.168.14.2"<br>
+                    ip ssh filetransfer<br>
+                    ip route 1.1.1.0 255.255.255.0 192.168.14.5<br>
+                    ip route 1.1.1.5 255.255.255.255 192.168.14.199<br>
+                    ip route 2.2.2.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.10.0.0 255.255.0.0 192.168.171.2<br>
+                    ip route 10.10.100.100 255.255.255.255 192.168.171.2<br>
+                    ip route 10.10.101.0 255.255.255.0 192.168.14.199<br>
+                    ip route 10.10.104.0 255.255.255.0 192.168.14.5<br>
+                    ip route 10.10.106.0 255.255.255.0 192.168.14.20<br>
+                    ip route 10.12.0.0 255.255.0.0 192.168.171.2<br>
+                    ip route 10.12.4.123 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.0.1 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.0.2 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.1.10 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.5.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.17.5.69 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.6.115 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.6.127 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.6.129 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.17.250 255.255.255.255 192.168.171.2<br>
+                    ip route 10.17.60.50 255.255.255.255 192.168.171.2<br>
+                    ip route 10.18.0.250 255.255.255.255 192.168.171.2<br>
+                    ip route 10.18.11.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.36.9.199 255.255.255.255 192.168.171.2<br>
+                    ip route 10.48.164.0 255.255.255.0 192.168.14.5<br>
+                    ip route 10.68.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.69.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.70.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.71.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.72.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.73.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.74.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.76.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.77.0.99 255.255.255.255 192.168.171.2<br>
+                    ip route 10.82.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.93.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.95.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.97.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.99.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.101.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 10.105.0.0 255.255.255.0 192.168.171.2<br>
+                    ip route 172.16.10.0 255.255.255.0 192.168.14.5<br>
+                    ip route 172.18.25.0 255.255.255.0 192.168.171.2<br>
+                    ip route 172.21.66.0 255.255.255.0 192.168.171.2<br>
+                    ip route 192.168.10.0 255.255.255.0 192.168.171.2<br>
+                    ip route 192.168.13.0 255.255.255.0 192.168.171.2<br>
+                    ip route 192.168.15.0 255.255.255.0 192.168.15.99<br>
+                    ip route 192.168.20.0 255.255.252.0 192.168.171.2<br>
+                    ip route 192.168.21.0 255.255.255.0 192.168.171.2<br>
+                    ip route 192.168.24.0 255.255.248.0 192.168.171.2<br>
+                    ip route 192.168.32.0 255.255.252.0 192.168.171.2<br>
+                    ip route 192.168.36.0 255.255.254.0 192.168.171.2<br>
+                    ip route 192.168.38.0 255.255.255.0 192.168.171.2<br>
+                    ip route 192.168.39.0 255.255.255.0 192.168.14.5<br>
+                    ip route 192.168.40.0 255.255.254.0 192.168.171.2<br>
+                    ip route 192.168.42.0 255.255.254.0 192.168.171.2<br>
+                    ip route 192.168.44.0 255.255.252.0 192.168.171.2<br>
+                    ip route 192.168.48.0 255.255.248.0 192.168.171.2<br>
+                    ip route 192.168.55.0 255.255.255.0 192.168.171.2<br>
+                    ip route 192.168.56.0 255.255.255.0 192.168.171.2<br>
+                    ip route 192.168.60.0 255.255.255.0 192.168.14.5<br>
+                    ip route 192.168.170.0 255.255.255.0 192.168.171.2<br>
+                    ip routing<br>
+                    switch-interconnect trk100<br>
+                    interface 1<br>
+                       name "SW2.01 - ubiua1.eth1"<br>
+                       exit<br>
+                    interface 2<br>
+                       name "SW2.02 - ubiua2.eth1"<br>
+                       exit<br>
+                    interface 3<br>
+                       name "SW2.03 - ubimta1.eth1"<br>
+                       exit<br>
+                    interface 4<br>
+                       name "SW2.04 - ubimta2.eth1"<br>
+                       exit<br>
+                    interface 5<br>
+                       name "SW2.05 - aimweb1.eth1"<br>
+                       exit<br>
+                    interface 6<br>
+                       name "SW2.06- aimweb2.eth1"<br>
+                       exit<br>
+                    interface 7<br>
+                       name "SW2.07 - aimdb1.eth1"<br>
+                       exit<br>
+                    interface 8<br>
+                       name "SW2.08- aimdb2.eth1"<br>
+                       exit<br>
+                    interface 9<br>
+                       name "SW2.09 - aimweb1.eth3"<br>
+                       exit<br>
+                    interface 10<br>
+                       name "SW2.10 - aimweb2.eth3"<br>
+                       exit<br>
+                    interface 11<br>
+                       name "SW2.11 - aimdb1.eth3"<br>
+                       exit<br>
+                    interface 12<br>
+                       name "SW2.12 - aimdb2.eth3"<br>
+                       exit<br>
+                    interface 13<br>
+                       name "SW2.13 - CADMOS1.eth1"<br>
+                       exit<br>
+                    interface 14<br>
+                       name "SW2.13 - CADMOS2.eth1"<br>
+                       exit<br>
+                    interface 15<br>
+                       name "SW2.13 - CADMOS3.eth1"<br>
+                       exit<br>
+                    interface 16<br>
+                       name "SW2.13 - CADMOS4.eth1"<br>
+                       exit<br>
+                    interface 17<br>
+                       name "SW2.13 - CADMOS5.eth1"<br>
+                       exit<br>
+                    interface 18<br>
+                       name "SW2.13 - CADMOS6.eth1"<br>
+                       exit<br>
+                    interface 19<br>
+                       name "SW2.19 - NTP 1 port 2"<br>
+                       exit<br>
+                    interface 20<br>
+                       name "SW2.20 - NTP 2 port 2"<br>
+                       exit<br>
+                    interface 21<br>
+                       name "SW2.21 - ubiua1.iLo"<br>
+                       exit<br>
+                    interface 22<br>
+                       name "SW2.22 - ubiua2.iLo"<br>
+                       exit<br>
+                    interface 23<br>
+                       name "SW2.23 - ubiua1.iLo"<br>
+                       exit<br>
+                    interface 24<br>
+                       name "SW2.24 - ubiua2.iLo"<br>
+                       exit<br>
+                    interface 25<br>
+                       name "SW2.25 - ubimta1.iLo"<br>
+                       exit<br>
+                    interface 26<br>
+                       name "SW2.26 - ubimta2.iLo"<br>
+                       exit<br>
+                    interface 27<br>
+                       name "SW2.27 - aimweb1.iLo"<br>
+                       exit<br>
+                    interface 28<br>
+                       name "SW2.28 - aimweb2.iLo"<br>
+                       exit<br>
+                    interface 29<br>
+                       name "SW2.29 - aimdb1.iLo"<br>
+                       exit<br>
+                    interface 30<br>
+                       name "SW2.30 - aimdb2.iLo"<br>
+                       exit<br>
+                    interface 31<br>
+                       name "---unused---"<br>
+                       exit<br>
+                    interface 32<br>
+                       name "---unused---"<br>
+                       exit<br>
+                    interface 33<br>
+                       name "---unused---"<br>
+                       exit<br>
+                    interface 34<br>
+                       name "SW2.34 - PCAA IT LAN"<br>
+                       exit<br>
+                    interface 35<br>
+                       name "SW2.35 - REMOTE WS11"<br>
+                       exit<br>
+                    interface 36<br>
+                       name "SW2.36 - REMOTE WS12"<br>
+                       exit<br>
+                    interface 37<br>
+                       name "SW2.37 - REMOTE WS13"<br>
+                       exit<br>
+                    interface 38<br>
+                       name "SW2.38 - REMOTE WS14"<br>
+                       exit<br>
+                    interface 39<br>
+                       name "SW2.39 - REMOTE WS15"<br>
+                       exit<br>
+                    interface 40<br>
+                       name "SW2.40 - REMOTE WS16"<br>
+                       exit<br>
+                    interface 41<br>
+                       name "SW2.41 - REMOTE WS17"<br>
+                       exit<br>
+                    interface 42<br>
+                       name "SW2.42 - REMOTE WS18"<br>
+                       exit<br>
+                    interface 43<br>
+                       name "SW2.43 - REMOTE WS19"<br>
+                       exit<br>
+                    interface 44<br>
+                       name "SW2.44 - REMOTE WS20"<br>
+                       exit<br>
+                    interface 45<br>
+                       name "technician port"<br>
+                       exit<br>
+                    interface 46<br>
+                       name "SW2.46/SW1.46 - Peer Keepalive"<br>
+                       exit<br>
+                    interface 47<br>
+                       name "SW2.47/SW1.47 - Interswitch Trunk"<br>
+                       exit<br>
+                    interface 48<br>
+                       name "SW2.48/SW1.48 - Interswitch Trunk"<br>
+                       exit<br>
+                    interface Trk1<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk2<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk3<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk4<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk5<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk6<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk7<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk8<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk9<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk10<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk11<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    interface Trk12<br>
+                       unknown-vlans disable<br>
+                       exit<br>
+                    snmp-server community "public_ids" operator unrestricted<br>
+                    oobm<br>
+                       no ip address<br>
+                       exit<br>
+                    router vrrp<br>
+                       virtual-ip-ping<br>
+                       exit<br>
+                    vlan 1<br>
+                       name "DEFAULT_VLAN"<br>
+                       no untagged 13-20,23-30,32-46,Trk1-Trk12<br>
+                       untagged 21-22,31,Trk100<br>
+                       ip address dhcp-bootp<br>
+                       exit<br>
+                    vlan 1000<br>
+                       name "IDS_MGNT"<br>
+                       tagged Trk100<br>
+                       ip address 192.168.1.2 255.255.255.0<br>
+                       exit<br>
+                    vlan 1001<br>
+                       name "AMHS_PUBLIC"<br>
+                       untagged 13-20,32-33,45,Trk1-Trk4<br>
+                       tagged Trk100<br>
+                       ip address 192.168.14.2 255.255.255.0<br>
+                       vrrp vrid 101<br>
+                          virtual-ip-address 192.168.14.1<br>
+                          enable<br>
+                          exit<br>
+                       exit<br>
+                    vlan 1005<br>
+                       name "AIM_PUBLIC"<br>
+                       untagged Trk5-Trk8<br>
+                       tagged Trk100<br>
+                       ip address 192.168.15.2 255.255.255.0<br>
+                       vrrp vrid 105<br>
+                          virtual-ip-address 192.168.15.1<br>
+                          enable<br>
+                          exit<br>
+                       exit<br>
+                    vlan 1006<br>
+                       name "AIM_CLUSTER"<br>
+                       untagged Trk9-Trk12<br>
+                       tagged Trk100<br>
+                       ip address 192.168.16.2 255.255.255.0<br>
+                       vrrp vrid 106<br>
+                          virtual-ip-address 192.168.16.1<br>
+                          enable<br>
+                          exit<br>
+                       exit<br>
+                    vlan 1021<br>
+                       name "EXTERNAL_FDPS"<br>
+                       untagged 35-40<br>
+                       tagged Trk100<br>
+                       ip address 192.168.12.253 255.255.255.0<br>
+                       exit<br>
+                    vlan 1031<br>
+                       name "WS_LOCAL"<br>
+                       untagged 41-44<br>
+                       tagged Trk100<br>
+                       ip address 192.168.13.2 255.255.255.0<br>
+                       exit<br>
+                    vlan 1041<br>
+                       name "PCAA_IT_LAN"<br>
+                       untagged 34<br>
+                       tagged Trk100<br>
+                       ip address 192.168.171.12 255.255.255.0<br>
+                       vrrp vrid 141<br>
+                          virtual-ip-address 192.168.171.11<br>
+                          enable<br>
+                          exit<br>
+                       exit<br>
+                    vlan 1049<br>
+                       name "IDS_iLO"<br>
+                       untagged 23-30<br>
+                       tagged Trk100<br>
+                       ip address 192.168.2.2 255.255.255.0<br>
+                       vrrp vrid 149<br>
+                          virtual-ip-address 192.168.2.1<br>
+                          enable<br>
+                          exit<br>
+                       exit<br>
+                    vlan 1050<br>
+                       name "PEER_KEEPALIVE"<br>
+                       untagged 46<br>
+                       ip address 192.168.3.2 255.255.255.0<br>
+                       exit<br>
+                    spanning-tree Trk1 priority 4 bpdu-filter<br>
+                    spanning-tree Trk2 priority 4 bpdu-filter<br>
+                    spanning-tree Trk3 priority 4 bpdu-filter<br>
+                    spanning-tree Trk4 priority 4 bpdu-filter<br>
+                    spanning-tree Trk5 priority 4 bpdu-filter<br>
+                    spanning-tree Trk6 priority 4 bpdu-filter<br>
+                    spanning-tree Trk7 priority 4 bpdu-filter<br>
+                    spanning-tree Trk8 priority 4 bpdu-filter<br>
+                    spanning-tree Trk9 priority 4 bpdu-filter<br>
+                    spanning-tree Trk10 priority 4 bpdu-filter<br>
+                    spanning-tree Trk11 priority 4 bpdu-filter<br>
+                    spanning-tree Trk12 priority 4 bpdu-filter<br>
+                    spanning-tree Trk100 priority 4<br>
+                    no tftp client<br>
+                    no tftp server<br>
+                    distributed-trunking peer-keepalive vlan 1050<br>
+                    distributed-trunking peer-keepalive destination 192.168.3.1<br>
+                    no autorun<br>
+                    no dhcp config-file-update<br>
+                    no dhcp image-file-update<br>
+                    password manager<br>
+                    password operator<br>
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="192.168.171.2">
+            <div class="spec">
+                <div class="img">
+                    <h2>AMHS CAA IT ROUTER</h2>
+                    <img src="" alt="">
+                </div>
+                <div class="details">
+                    <h2>AMHS CAA IT ROUTER DETAILS</h2>
+                    <p>Make HP Model Aruba is a 42 Port Layer 3 Switch. It is responsible for the Network Communication between Servers and Workstations. As the name suggests all the core IP routes are configured on this switch.</p>
+                </div>
+            </div>
+            <div class="configuration">
+                <div class="heading"><h2>AMHS CAA IT ROUTER CONFIGURATION</h2></div>
+                <div class="para"><p>
+                    Current configuration : 2746 bytes<br>
+                    !<br>
+                    ! No configuration change since last restart<br>
+                    !<br>
+                    version 12.4<br>
+                    service timestamps debug datetime msec<br>
+                    service timestamps log datetime msec<br><br>
+                    no service password-encryption<br>
+                    !<br>
+                    hostname AMHS-ITCORE<br>
+                    !<br>
+                    boot-start-marker<br>
+                    boot-end-marker<br>
+                    !<br>
+                    enable password amhs<br>
+                    !<br>
+                    no aaa new-model<br>
+                    !<br>
+                    resource policy<br>
+                    !<br>
+                    !<br>
+                    !<br>
+                    ip cef<br>
+                    !<br>
+                    !<br>
+                    !<br>
+                    !<br>
+                    !<br>
+                    !<br>
+                    !<br>
+                    !<br>
+                    username admin privilege 15 password 0 amhs<br>
+                    archive<br>
+                     log config<br>
+                      hidekeys<br>
+                    !<br>
+                    !<br>
+                    !<br>
+                    crypto isakmp policy 100<br>
+                     encr 3des<br>
+                     hash md5<br>
+                     authentication pre-share<br>
+                     group 2<br>
+                     lifetime 28800<br>
+                    crypto isakmp key bigset address 0.0.0.0 0.0.0.0<br>
+                    crypto isakmp keepalive 10<br>
+                    !<br>
+                    !<br>
+                    crypto ipsec transform-set DMVPN esp-3des esp-md5-hmac<br>
+                     mode transport<br>
+                    !<br>
+                    crypto ipsec profile vpnprofdmvpn<br>
+                     set security-association lifetime seconds 120<br>
+                     set transform-set DMVPN<br>
+                    !<br>
+                    !<br>
+                    !<br>
+                    !<br>
+                    !<br>
+                    interface Tunnel0<br>
+                     ip address 2.2.2.1 255.255.255.240<br>
+                     no ip redirects<br>
+                     ip mtu 1416<br>
+                     no ip next-hop-self eigrp 10<br>
+                     ip nhrp authentication bigset<br>
+                     ip nhrp map multicast dynamic<br>
+                     ip nhrp network-id 99<br>
+                     no ip split-horizon eigrp 10<br>
+                     tunnel source FastEthernet0/1<br>
+                     tunnel mode gre multipoint<br>
+                     tunnel key 999<br>
+                     tunnel protection ipsec profile vpnprofdmvpn<br>
+                    !<br>
+                    interface FastEthernet0/0<br>
+                     ip address 192.168.170.2 255.255.255.0<br>
+                     duplex auto<br>
+                     speed auto<br>
+                    !<br>
+                    interface FastEthernet0/1<br>
+                     ip address 10.17.0.2 255.255.0.0<br>
+                     duplex auto<br>
+                     speed auto<br>
+                    !<br>
+                    interface FastEthernet0/1/0<br>
+                     switchport access vlan 2<br>
+                    !<br>
+                    interface FastEthernet0/1/1<br>
+                    !<br>
+                    interface FastEthernet0/1/2<br>
+                    !<br>
+                    interface FastEthernet0/1/3<br>
+                    !<br>
+                    interface Serial0/2/0<br>
+                     no ip address<br>
+                     shutdown<br>
+                     no fair-queue<br>
+                     clock rate 125000<br>
+                    !<br>
+                    interface Serial0/2/1<br>
+                     no ip address<br>
+                     shutdown<br>
+                     clock rate 125000<br>
+                    !<br>
+                    interface Vlan1<br>
+                     no ip address<br>
+                    !<br>
+                    interface Vlan2<br>
+                     ip address 192.168.171.2 255.255.255.0<br>
+                    !<br>
+                    router eigrp 10<br>
+                     network 2.0.0.0<br>
+                     network 192.168.10.0<br>
+                     network 192.168.12.0<br>
+                     network 192.168.21.0<br>
+                     network 192.168.22.0<br>
+                     network 192.168.25.0<br>
+                     network 192.168.33.0<br>
+                     network 192.168.42.0<br>
+                     no auto-summary<br>
+                    !<br>
+                    ip route 0.0.0.0 0.0.0.0 10.17.0.1<br>
+                    ip route 192.168.10.0 255.255.255.0 192.168.170.1<br>
+                    ip route 192.168.12.0 255.255.255.0 192.168.170.1<br>
+                    ip route 192.168.13.0 255.255.255.0 192.168.171.11<br>
+                    ip route 192.168.14.0 255.255.255.0 192.168.171.11<br>
+                    ip route 192.168.15.0 255.255.255.0 192.168.171.11<br>
+                    ip route 192.168.21.0 255.255.255.0 10.200.19.100<br>
+                    ip route 192.168.22.0 255.255.255.0 10.200.19.100<br>
+                    ip route 192.168.25.0 255.255.255.0 10.69.0.2<br>
+                    ip route 192.168.33.0 255.255.255.0 10.74.0.2<br>
+                    ip route 192.168.42.0 255.255.255.0 10.66.0.2<br>
+                    ip route 192.168.52.0 255.255.255.0 10.17.0.1<br>
+                    !<br>
+                    !<br>
+                    ip http server<br><br>
+                    no ip http secure-server<br>
+                    !<br>
+                    snmp-server community public RO<br>
+                    snmp-server location Pakistan<br>
+                    snmp-server contact comsoft gmbh karlsruhe germany<br>
+                    !<br>
+                    !<br>
+                    !<br>
+                    !<br>
+                    control-plane<br>
+                    !<br>
+                    !<br>
+                    line con 0<br>
+                    line aux 0<br>
+                    line vty 0 4<br>
+                     password amhs<br>
+                     login<br>
+                    !<br>
+                    scheduler allocate 20000 1000<br>
+                    !<br>
+                    end<br>
+                    
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

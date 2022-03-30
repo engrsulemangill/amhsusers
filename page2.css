@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+.main
+{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.main .header
+{
+    width:100%;
+    height:13vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 20px;
+}
+.main .header img
+{
+    width:100px;
+    height:100px;
+}
+.main .about
+{
+    width:70%;
+    height:85vh;
+    border:2px solid blue;
+    display:flex;
+    margin: 10px 0px;
+}
+.main .about .spec
+{
+    width:40%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main .about .spec .img
+{
+    width:100%;
+    height:50%;
+    border:2px solid blue;
+    padding: 5px;;
+}
+.main .about .spec .img h2
+{
+    text-align: center;
+}
+.main .about .spec .details
+{
+    width:100%;
+    height:50%;
+    border:2px solid blue;
+    padding:5px;
+}
+.main .about .spec .details h2
+{
+    text-align: center;
+}
+
+.main .about .configuration
+{
+    width:60%;
+    height:100%;
+    border:2px solid blue;
+    float: right;
+    padding:5px;
+}
+.main .about .configuration .heading
+{
+    background-color: white;
+}
+.main .about .configuration .heading h2
+{
+    text-align: center;
+}
+.main .about .configuration .para
+{
+    width:100%;
+    height:90%;
+    overflow: scroll;
+}
+.main .about .configuration .para p
+{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
